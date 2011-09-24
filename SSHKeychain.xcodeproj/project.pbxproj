@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -87,23 +87,6 @@
 		E1D38C390C6D33C500C6F351 /* SSHKeychain.sdef in Resources */ = {isa = PBXBuildFile; fileRef = E1D38C380C6D33C500C6F351 /* SSHKeychain.sdef */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		CCFAAB520C7CB9C800AD9093 /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Development;
-		};
-		CCFAAB530C7CB9C800AD9093 /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
 		CCC9E3E406A5A44900422E9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -137,7 +120,7 @@
 /* Begin PBXFileReference section */
 		0A3310590830A54500A9B20E /* BUGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUGS; sourceTree = "<group>"; };
 		0A3310650830A68B00A9B20E /* version.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; fileEncoding = 4; path = version.plist; sourceTree = "<group>"; };
-		0A5AA8A0075F2CBD007668AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5AA8A0075F2CBD007668AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7F548E07676EB500E1C1E4 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		0A7F548F07676EB500E1C1E4 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		0A7F549A07676F2400E1C1E4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
@@ -149,7 +132,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* SSHKeychain_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHKeychain_Prefix.pch; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* SSHKeychain.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SSHKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* SSHKeychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSHKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC08A64506A876B300C578A3 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; usesTabs = 1; };
 		CC08A64606A876B300C578A3 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; usesTabs = 1; };
 		CC14663E06AD2DBF0083071B /* PreferenceView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PreferenceView.h; path = PreferenceViews/PreferenceView.h; sourceTree = "<group>"; usesTabs = 1; };
@@ -535,13 +518,12 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = CC39D6370921118A00FE3BC5 /* Build configuration list for PBXProject "SSHKeychain" */;
-			buildSettings = {
+			attributes = {
+				LastUpgradeCheck = 0410;
 			};
-			buildStyles = (
-				CCFAAB520C7CB9C800AD9093 /* Development */,
-				CCFAAB530C7CB9C800AD9093 /* Deployment */,
-			);
+			buildConfigurationList = CC39D6370921118A00FE3BC5 /* Build configuration list for PBXProject "SSHKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -555,6 +537,7 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SSHKeychain */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SSHKeychain */,
 				CCC9E3B506A5A3BC00422E9E /* TunnelRunner */,
@@ -746,7 +729,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -767,7 +749,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				INSTALL_PATH = /usr/local/bin;
@@ -806,7 +787,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -834,7 +814,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -892,7 +871,6 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Growl SDK/Frameworks\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -929,7 +907,6 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../Growl SDK/Frameworks\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_TRIGRAPHS = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
