@@ -14,14 +14,14 @@ extern NSString *local(NSString *theString);
 - (NSDictionary *) registrationDictionaryForGrowl
 {
 	NSArray *notifications;
-	
+
 	notifications = [NSArray arrayWithObjects: @"Tunnel Opened", @"Tunnel Closed", @"Tunnel Restart", @"Warning", nil];
-	
+
 	NSDictionary *dict;
 	dict = [NSDictionary dictionaryWithObjectsAndKeys:
 		notifications, GROWL_NOTIFICATIONS_ALL,
 		notifications, GROWL_NOTIFICATIONS_DEFAULT, nil];
-	
+
 	return (dict);
 }
 
@@ -61,7 +61,7 @@ extern NSString *local(NSString *theString);
 - (void) tunnelRestart:(NSString *) tunnelName
 {
 	if ([self isOn]) {
-		[GrowlApplicationBridge 
+		[GrowlApplicationBridge
 			notifyWithTitle:local(@"TunnelRestart")
 				description:[NSString stringWithFormat: @"(%@) %@", tunnelName, local(@"TunnelIsBeeingRestarted")]
 		   notificationName:@"Tunnel Restart"
