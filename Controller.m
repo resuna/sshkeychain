@@ -60,6 +60,8 @@ NSString *local(NSString *theString)
 			@"NO",
 			@"30",
 			@"0",
+			@"NO",
+			@"NO",
 			nil
 		]
 		forKeys:
@@ -78,6 +80,8 @@ NSString *local(NSString *theString)
 			ManageGlobalEnvironmentString,
 			CheckScreensaverIntervalString,
 			KeyTimeoutString,
+			UseGrowlString,
+			DisableDialogNotificationsWhenUsingGrowlString,
 			nil
 		]
 	];
