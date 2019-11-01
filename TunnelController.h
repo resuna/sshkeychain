@@ -6,9 +6,6 @@
 	/* Tunnels Menu Item. */
 	IBOutlet id mainMenuTunnelsItem, dockMenuTunnelsItem, statusbarMenuTunnelsItem;
 	
-	/* Growl support */
-	IBOutlet id growlNotificationController;
-	
 	NSMutableArray *tunnels;
 	
 	BOOL allKeysOnAgent;

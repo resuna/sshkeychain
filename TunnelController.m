@@ -5,7 +5,6 @@
 #import "Libs/SSHTunnel.h"
 #import "Utilities.h"
 #import "NSMenu_Additions.h"
-#import "GrowlNotificationController.h"
 
 #ifndef NSAppKitVersionNumber10_3
 #define NSAppKitVersionNumber10_3 743
@@ -325,8 +324,6 @@ TunnelController *sharedTunnelController;
 
 		[tunnel closeTunnel];
 		
-		[growlNotificationController tunnelClosed:[aTunnel objectForKey:@"TunnelName"]];
-		
 		[dict removeObjectForKey:@"TunnelObject"];
 		
 		[sender setState:NO];
@@ -529,10 +526,6 @@ TunnelController *sharedTunnelController;
 	[tunnel handleClosedWithSelector:@selector(handleClosedTunnels:) toObject:self 
 				withInfo:[dict objectForKey:@"TunnelUUID"]];
 	
-	if ([dict objectForKey:@"LastTerminated"]) {
-		[growlNotificationController tunnelRestart: [dict objectForKey:@"TunnelName"]];
-	}
-	
 	if([tunnel openTunnel]) 
 	{
 		[dict setObject:tunnel forKey:@"TunnelObject"];
@@ -544,10 +537,6 @@ TunnelController *sharedTunnelController;
 		[[dockMenuTunnelsItem itemWithRepresentation:uuid] setState:YES];
 		
 		[self setToolTipForActiveTunnels];
-		
-		if (! [dict objectForKey:@"LastTerminated"]) {
-			[growlNotificationController tunnelOpened: [dict objectForKey:@"TunnelName"]];
-		}
 	}
 	/* Either the dictionary has it, or it didn't work and we don't want it. */
 	[tunnel release];
@@ -563,16 +552,7 @@ TunnelController *sharedTunnelController;
 	[dict setObject:title forKey:(NSString *)kCFUserNotificationAlertHeaderKey];
 	[dict setObject:message forKey:(NSString *)kCFUserNotificationAlertMessageKey];
 	
-	/* Growl support */
-	[growlNotificationController warningWithTitle:title andMessage:message];
-
-	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-	if (
-		([prefs boolForKey:UseGrowlString] == NO)
-		|| ([prefs boolForKey:DisableDialogNotificationsWhenUsingGrowlString] == NO))
-	{
-		CFUserNotificationCreate(nil, 30, CFUserNotificationSecureTextField(0), nil, (CFDictionaryRef)dict);
-	}
+	CFUserNotificationCreate(nil, 30, CFUserNotificationSecureTextField(0), nil, (CFDictionaryRef)dict);
 }
 
 /* Handle the notification queue. */

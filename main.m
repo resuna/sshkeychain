@@ -54,7 +54,7 @@ int main(int argc, const char *argv[])
 	io_object_t theIterator;
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-	if((root_port = IORegisterForSystemPower(0, &notify, powerchange_callback, &theIterator)) == nil)
+	if((root_port = IORegisterForSystemPower(0, &notify, powerchange_callback, &theIterator)) == NULL)
 	{
 		[NSException raise: NSInternalInconsistencyException
 			format: @"Failed to register process for System Power Notifications"];
