@@ -78,7 +78,7 @@
 		CCFAAB470C7C870900AD9093 /* SSHToken.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFAAB450C7C870900AD9093 /* SSHToken.h */; };
 		CCFAAB480C7C870900AD9093 /* SSHToken.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAAB460C7C870900AD9093 /* SSHToken.m */; };
 		E1CF47F20C6C7F4E00B3F162 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CF47F10C6C7F4E00B3F162 /* Growl.framework */; };
-		E1CF47F70C6C7F7F00B3F162 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1CF47F10C6C7F4E00B3F162 /* Growl.framework */; };
+		E1CF47F70C6C7F7F00B3F162 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1CF47F10C6C7F4E00B3F162 /* Growl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E1CF48110C6D05DA00B3F162 /* GrowlNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CF480F0C6D05DA00B3F162 /* GrowlNotificationController.m */; };
 		E1CF48120C6D05DA00B3F162 /* GrowlNotificationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1CF48100C6D05DA00B3F162 /* GrowlNotificationController.h */; };
 		E1D38B2F0C6D1D3800C6F351 /* preference_growl.tiff in Resources */ = {isa = PBXBuildFile; fileRef = E1D38B2E0C6D1D3800C6F351 /* preference_growl.tiff */; };
@@ -139,11 +139,6 @@
 		CC14669406AD2E2E0083071B /* GeneralView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GeneralView.h; path = PreferenceViews/GeneralView.h; sourceTree = "<group>"; usesTabs = 1; };
 		CC14669506AD2E2E0083071B /* GeneralView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GeneralView.m; path = PreferenceViews/GeneralView.m; sourceTree = "<group>"; usesTabs = 1; };
 		CC1466D506AD354A0083071B /* PreferenceView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = PreferenceView.m; path = PreferenceViews/PreferenceView.m; sourceTree = "<group>"; usesTabs = 1; };
-		CC1D4CD30C440A3A00A75CE3 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		CC1D4CD50C440A5A00A75CE3 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/Preferences.nib; sourceTree = "<group>"; };
-		CC1D4CD70C440A7E00A75CE3 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CC1D4CD90C440A9700A75CE3 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC1D4CDB0C440AAF00A75CE3 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Dutch; path = Dutch.lproj/Credits.html; sourceTree = "<group>"; };
 		CC341CE006ACF1F300E32630 /* preference_general.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = preference_general.tiff; sourceTree = "<group>"; };
 		CC341CE606ACF3AD00E32630 /* preference_keys.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = preference_keys.tiff; sourceTree = "<group>"; };
 		CC341D0B06AD012C00E32630 /* preference_environment.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = preference_environment.tiff; sourceTree = "<group>"; };
@@ -161,25 +156,6 @@
 		CC6C191407421C8700CB0A18 /* UpdateController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UpdateController.m; sourceTree = "<group>"; usesTabs = 1; };
 		CCC3B47006B149E100B3A68B /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DisplayView.h; path = PreferenceViews/DisplayView.h; sourceTree = "<group>"; usesTabs = 1; };
 		CCC3B47106B149E100B3A68B /* DisplayView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DisplayView.m; path = PreferenceViews/DisplayView.m; sourceTree = "<group>"; usesTabs = 1; };
-		CCC9E27506A58DB600422E9E /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = English; path = English.lproj/Credits.html; sourceTree = "<group>"; };
-		CCC9E27706A58DB600422E9E /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCC9E27906A58DB600422E9E /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CCC9E27B06A58DB600422E9E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		CCC9E27D06A58DB600422E9E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
-		CCC9E2C806A58DEA00422E9E /* French */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = French; path = French.lproj/Credits.html; sourceTree = "<group>"; };
-		CCC9E2C906A58DEA00422E9E /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCC9E2CA06A58DEA00422E9E /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CCC9E2CB06A58DEA00422E9E /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		CCC9E2CC06A58DEA00422E9E /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/Preferences.nib; sourceTree = "<group>"; };
-		CCC9E2D806A58E0300422E9E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Italian; path = Italian.lproj/Credits.html; sourceTree = "<group>"; };
-		CCC9E2D906A58E0300422E9E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCC9E2DA06A58E0300422E9E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CCC9E2DB06A58E0300422E9E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		CCC9E2DC06A58E0300422E9E /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/Preferences.nib; sourceTree = "<group>"; };
-		CCC9E2E006A58E1200422E9E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Japanese; path = Japanese.lproj/Credits.html; sourceTree = "<group>"; };
-		CCC9E2E106A58E1200422E9E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CCC9E2E206A58E1200422E9E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		CCC9E2E306A58E1200422E9E /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/Preferences.nib; sourceTree = "<group>"; };
 		CCC9E32606A58F9600422E9E /* small_icon_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_icon_empty.png; sourceTree = "<group>"; };
 		CCC9E32706A58F9600422E9E /* small_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_icon.png; sourceTree = "<group>"; };
 		CCC9E32806A58F9600422E9E /* SSHKeychain.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = SSHKeychain.icns; sourceTree = "<group>"; };
@@ -212,6 +188,30 @@
 		CCE66DE306B15AEA002A5BEE /* TunnelsView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = TunnelsView.m; path = PreferenceViews/TunnelsView.m; sourceTree = "<group>"; usesTabs = 1; };
 		CCFAAB450C7C870900AD9093 /* SSHToken.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SSHToken.h; path = Libs/SSHToken.h; sourceTree = "<group>"; };
 		CCFAAB460C7C870900AD9093 /* SSHToken.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SSHToken.m; path = Libs/SSHToken.m; sourceTree = "<group>"; };
+		D0587F93236C64C8004E9284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Credits.html; sourceTree = "<group>"; };
+		D0587F94236C64C8004E9284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0587F95236C64C8004E9284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0587F98236C64CD004E9284 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = nl; path = nl.lproj/Credits.html; sourceTree = "<group>"; };
+		D0587F99236C64CD004E9284 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0587F9A236C64CD004E9284 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0587F9B236C64CD004E9284 /* nl */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = nl; path = nl.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		D0587F9C236C64CD004E9284 /* nl */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = nl; path = nl.lproj/Preferences.nib; sourceTree = "<group>"; };
+		D0587F9D236C64D2004E9284 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = it; path = it.lproj/Credits.html; sourceTree = "<group>"; };
+		D0587F9E236C64D2004E9284 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0587F9F236C64D2004E9284 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0587FA0236C64D2004E9284 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = it.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		D0587FA1236C64D2004E9284 /* it */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = it; path = it.lproj/Preferences.nib; sourceTree = "<group>"; };
+		D0587FA2236C64D5004E9284 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fr; path = fr.lproj/Credits.html; sourceTree = "<group>"; };
+		D0587FA3236C64D5004E9284 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0587FA4236C64D5004E9284 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0587FA5236C64D5004E9284 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = fr.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		D0587FA6236C64D5004E9284 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = fr; path = fr.lproj/Preferences.nib; sourceTree = "<group>"; };
+		D0587FA7236C64D8004E9284 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ja; path = ja.lproj/Credits.html; sourceTree = "<group>"; };
+		D0587FA8236C64D8004E9284 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0587FA9236C64D8004E9284 /* ja */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ja; path = ja.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		D0587FAA236C64D8004E9284 /* ja */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ja; path = ja.lproj/Preferences.nib; sourceTree = "<group>"; };
+		D0587FAB236C64E3004E9284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		D0587FAC236C64E3004E9284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/Preferences.nib; sourceTree = "<group>"; };
 		E1CF47F10C6C7F4E00B3F162 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = "../Growl SDK/Frameworks/Growl.framework"; sourceTree = SOURCE_ROOT; };
 		E1CF480F0C6D05DA00B3F162 /* GrowlNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GrowlNotificationController.m; sourceTree = "<group>"; };
 		E1CF48100C6D05DA00B3F162 /* GrowlNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GrowlNotificationController.h; sourceTree = "<group>"; };
@@ -519,21 +519,22 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = CC39D6370921118A00FE3BC5 /* Build configuration list for PBXProject "SSHKeychain" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				Italian,
-				Swedish,
-				Dutch,
-				Portuguese,
+				pt,
+				en,
+				nl,
+				sv,
+				it,
+				fr,
+				ja,
+				de,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SSHKeychain */;
 			projectDirPath = "";
@@ -660,11 +661,11 @@
 		CCC9E27406A58DB600422E9E /* Credits.html */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC9E27506A58DB600422E9E /* English */,
-				CCC9E2C806A58DEA00422E9E /* French */,
-				CCC9E2D806A58E0300422E9E /* Italian */,
-				CCC9E2E006A58E1200422E9E /* Japanese */,
-				CC1D4CDB0C440AAF00A75CE3 /* Dutch */,
+				D0587F93236C64C8004E9284 /* en */,
+				D0587F98236C64CD004E9284 /* nl */,
+				D0587F9D236C64D2004E9284 /* it */,
+				D0587FA2236C64D5004E9284 /* fr */,
+				D0587FA7236C64D8004E9284 /* ja */,
 			);
 			name = Credits.html;
 			sourceTree = "<group>";
@@ -672,10 +673,10 @@
 		CCC9E27606A58DB600422E9E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC9E27706A58DB600422E9E /* English */,
-				CCC9E2C906A58DEA00422E9E /* French */,
-				CCC9E2D906A58E0300422E9E /* Italian */,
-				CC1D4CD90C440A9700A75CE3 /* Dutch */,
+				D0587F94236C64C8004E9284 /* en */,
+				D0587F99236C64CD004E9284 /* nl */,
+				D0587F9E236C64D2004E9284 /* it */,
+				D0587FA3236C64D5004E9284 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -683,11 +684,11 @@
 		CCC9E27806A58DB600422E9E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC9E27906A58DB600422E9E /* English */,
-				CCC9E2CA06A58DEA00422E9E /* French */,
-				CCC9E2DA06A58E0300422E9E /* Italian */,
-				CCC9E2E106A58E1200422E9E /* Japanese */,
-				CC1D4CD70C440A7E00A75CE3 /* Dutch */,
+				D0587F95236C64C8004E9284 /* en */,
+				D0587F9A236C64CD004E9284 /* nl */,
+				D0587F9F236C64D2004E9284 /* it */,
+				D0587FA4236C64D5004E9284 /* fr */,
+				D0587FA8236C64D8004E9284 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -695,11 +696,11 @@
 		CCC9E27A06A58DB600422E9E /* MainMenu.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC9E27B06A58DB600422E9E /* English */,
-				CCC9E2CB06A58DEA00422E9E /* French */,
-				CCC9E2DB06A58E0300422E9E /* Italian */,
-				CCC9E2E206A58E1200422E9E /* Japanese */,
-				CC1D4CD30C440A3A00A75CE3 /* Dutch */,
+				D0587F9B236C64CD004E9284 /* nl */,
+				D0587FA0236C64D2004E9284 /* it */,
+				D0587FA5236C64D5004E9284 /* fr */,
+				D0587FA9236C64D8004E9284 /* ja */,
+				D0587FAB236C64E3004E9284 /* Base */,
 			);
 			name = MainMenu.nib;
 			sourceTree = "<group>";
@@ -707,11 +708,11 @@
 		CCC9E27C06A58DB600422E9E /* Preferences.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCC9E27D06A58DB600422E9E /* English */,
-				CCC9E2CC06A58DEA00422E9E /* French */,
-				CCC9E2DC06A58E0300422E9E /* Italian */,
-				CCC9E2E306A58E1200422E9E /* Japanese */,
-				CC1D4CD50C440A5A00A75CE3 /* Dutch */,
+				D0587F9C236C64CD004E9284 /* nl */,
+				D0587FA1236C64D2004E9284 /* it */,
+				D0587FA6236C64D5004E9284 /* fr */,
+				D0587FAA236C64D8004E9284 /* ja */,
+				D0587FAC236C64E3004E9284 /* Base */,
 			);
 			name = Preferences.nib;
 			sourceTree = "<group>";
@@ -722,7 +723,8 @@
 		CC39D62C0921118A00FE3BC5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -745,7 +747,8 @@
 		CC39D62D0921118A00FE3BC5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
@@ -763,6 +766,8 @@
 		CC39D62E0921118A00FE3BC5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				INSTALL_PATH = /usr/local/bin;
@@ -778,7 +783,8 @@
 		CC39D6300921118A00FE3BC5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -808,7 +814,8 @@
 		CC39D6310921118A00FE3BC5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
@@ -833,6 +840,8 @@
 		CC39D6320921118A00FE3BC5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
@@ -855,7 +864,8 @@
 		CC39D6340921118A00FE3BC5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -879,6 +889,7 @@
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = SSHKeychain;
 				PRODUCT_NAME = SSHKeychain;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -894,7 +905,8 @@
 		CC39D6350921118A00FE3BC5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -914,6 +926,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = SSHKeychain;
 				PRODUCT_NAME = SSHKeychain;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -929,6 +942,8 @@
 		CC39D6360921118A00FE3BC5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -947,6 +962,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = SSHKeychain;
 				PRODUCT_NAME = SSHKeychain;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -961,18 +977,98 @@
 		CC39D6380921118A00FE3BC5 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		CC39D6390921118A00FE3BC5 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Deployment;
 		};
 		CC39D63A0921118A00FE3BC5 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Default;
 		};
