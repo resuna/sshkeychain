@@ -81,7 +81,7 @@ extern NSString *local(NSString *theString);
 		   notificationName:@"Warning"
 				   iconData:nil
 				   priority:1
-				   isSticky:NO    /* TODO: Make this a preference option */
+				   isSticky:YES
 			   clickContext:nil];
 	}
 }
