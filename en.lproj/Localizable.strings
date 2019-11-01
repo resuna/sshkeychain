@@ -113,8 +113,8 @@
 "UnknownHostKey" = "Unknown Host Key";
 
 "TunnelOpened" = "Tunnel Opened";
-"TunnelHasBeenOpened" = "established and opened.";
+"TunnelHasBeenOpened" = "The tunnel has been opened.";
 "TunnelClosed" = "Tunnel Closed";
-"TunnelHasBeenClosed" = "closed.";
-"TunnelRestart" = "Tunnel Restarting";
-"TunnelIsBeeingRestarted" = "restarting.";
+"TunnelHasBeenClosed" = "The tunnel has been closed.";
+"TunnelRestart" = "Tunnel Restart";
+"TunnelIsBeeingRestarted" = "The tunnel is beeing restarted.";
